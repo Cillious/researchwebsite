@@ -1,0 +1,244 @@
+#top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: auto;
+    padding-bottom: 10px;
+}
+
+hr {
+    width: 100%;
+    height: 5px;
+    grid-area: 3/1/4/-1;
+    background-color: black;
+    display: flex;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 35px;
+    width: 100%;
+    align-items: flex-end;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    background-color: grey;
+    width: 33%;
+    height: 35px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    border: solid black 2px;
+    align-items: flex-end;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: black;
+    width: 33%;
+    height: 35px;
+    background-color: lightgray;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    border: solid black 2px;
+    align-items: flex-end;
+}
+
+#homehero {
+    height: 300px;
+    width: 100%;
+}
+
+#mainheader h1 {
+    color: #1668a5;
+    justify-content: center;
+    text-decoration: underline;
+    padding-bottom: 5vw;
+    padding-top: 5vw;
+    font-size: 50px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+#mainheader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: 1/5/3/9;
+}
+
+main {
+    display: grid;
+    grid-template-columns: minmax(0px, 1fr) repeat(10, minmax(0, 100px)) minmax(0px, 1fr);
+    grid-template-rows: repeat(25, minmax(100px, 0));
+}
+
+#about {
+    grid-area: 4/5/5/9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    text-align: center;
+}
+
+#book {
+    grid-area: 7/5/-1/9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    text-align: center;
+}
+
+#book a {
+    text-decoration: none;
+    color: black;
+    background-color: grey;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    border: solid black 2px;
+    align-items: flex-end;
+}
+
+#book a:hover {
+    text-decoration: none;
+    color: black;
+    background-color: lightgray;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    border: solid black 2px;
+    align-items: flex-end;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    background-color: gray;
+    border: solid 2px black;
+    align-items: center;
+}
+
+#news {
+    display: flex;
+    flex-direction: column;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 25px;
+    padding-bottom: 30px;
+}
+
+#newsjoin {
+    display: flex;
+}
+
+#disclaimer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+#menu h3 {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 25px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+#menu a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+@media only screen and (max-width: 900px) {
+    #mainheader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: 1/5/2/10;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    #mainheader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: 2/5/4/10;
+    }
+
+    #mainheader h1 {
+        color: #1668a5;
+        justify-content: center;
+        text-decoration: underline;
+        padding-bottom: 5vw;
+        padding-top: 5vw;
+        font-size: 35px;
+        font-family: "Comic Sans MS", "Comic Sans", cursive;
+    }
+
+    #about {
+        display: none;
+    }
+
+    #book {
+        grid-area: 4/4/-1/-1;
+        display: flex;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 35px;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    nav a {
+        width: 100%;
+    }
+
+    nav a:hover {
+        width: 100%;
+    }
+
+    #homehero {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    #mainheader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: 2/4/4/11;
+    }
+}

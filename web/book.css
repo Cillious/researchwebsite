@@ -1,0 +1,217 @@
+#top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: auto;
+    padding-bottom: 10px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 35px;
+    width: 100%;
+    align-items: flex-end;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    background-color: grey;
+    width: 33%;
+    height: 35px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    border: solid black 2px;
+    align-items: flex-end;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: black;
+    width: 33%;
+    height: 35px;
+    background-color: lightgray;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    border: solid black 2px;
+    align-items: flex-end;
+}
+
+#homehero {
+    height: 300px;
+    width: 100%;
+}
+
+#mainheader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: 1/5/3/9;
+}
+
+main {
+    display: grid;
+    grid-template-columns: minmax(0px, 1fr) repeat(10, minmax(0, 100px)) minmax(0px, 1fr);
+    grid-template-rows: repeat(10, minmax(100px, 0));
+}
+
+hr {
+    width: 100%;
+    height: 5px;
+    grid-area: 3/1/4/-1;
+    background-color: black;
+    display: flex;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-area: 4/5/-2/9;
+    text-align: center;
+    font-size: 25px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+#formheader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    text-align: center;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+#orbitheader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    text-align: center;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    background-color: gray;
+    border: solid 2px black;
+    align-items: center;
+}
+
+#news {
+    display: flex;
+    flex-direction: column;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 25px;
+    padding-bottom: 30px;
+}
+
+#newsjoin {
+    display: flex;
+}
+
+#disclaimer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+#menu h3 {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 25px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+#menu a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+@media only screen and (max-width: 900px) {
+    #mainheader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: 1/5/2/10;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    #mainheader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: 2/5/4/10;
+    }
+
+    #mainheader h1 {
+        color: #1668a5;
+        justify-content: center;
+        text-decoration: underline;
+        padding-bottom: 5vw;
+        padding-top: 5vw;
+        font-size: 35px;
+        font-family: "Comic Sans MS", "Comic Sans", cursive;
+    }
+
+    #book {
+        grid-area: 4/4/-1/-1;
+        display: flex;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 35px;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    nav a {
+        width: 100%;
+    }
+
+    nav a:hover {
+        width: 100%;
+    }
+
+    #homehero {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    #mainheader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: 2/4/4/11;
+    }
+}
